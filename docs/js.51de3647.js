@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"qkqm":[function(require,module,exports) {
 "use strict";require("../scss/style.scss");
 },{"../scss/style.scss":"g0dr"}]},{},["qkqm"], null)
-//# sourceMappingURL=/js.7267a1eb.js.map
+//# sourceMappingURL=/js.51de3647.js.map
