@@ -20,7 +20,7 @@ body {
     background: $head;
 
     .container {
-        margin: 1rem;
+        margin: 1.5rem;
         
         @include breakpoint-up (medium) {
             display: grid;
@@ -90,7 +90,7 @@ body {
                 border-radius: 0 0.9rem 0.9rem 0;
             }
         }
-        #v {
+        #x {
             color: $lux;
             
             &:hover {
