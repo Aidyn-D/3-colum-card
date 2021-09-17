@@ -1,0 +1,103 @@
+@use "variables" as *;
+@use "mixins" as *;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.5;
+    background: $head;
+
+    .container {
+        margin: 1rem;
+        
+        @include breakpoint-up (medium) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            height: 90vh;
+            margin: 0 2.7rem;
+        }
+        .card {
+            padding: 2rem;
+            color: $para;
+            
+            .button {
+                margin: 1rem 0;
+                background-color: $head;
+                padding: 1rem 2rem;
+                border-radius: 4rem;
+                border: 2px solid $head;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                transition: all ease-in 250ms;
+            }
+        }
+        p {
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+        }
+        h2 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-weight: 700;
+        }
+        #sed {
+            border-radius: 0.9rem 0.9rem 0 0;
+            background-color: $sed;
+            
+            @include breakpoint-up (medium) {
+                border-radius: 0.9rem 0 0 0.9rem;
+            }
+        }
+        #s {
+            color: $sed;
+            
+            &:hover {
+                background: transparent;
+                color: $head;
+                border: 2px solid $head;
+            }
+        }
+        #suv {
+            background-color: $suv;
+        }
+        #u {
+            color: $suv;
+            
+            &:hover {
+                background: transparent;
+                color: $head;
+                border: 2px solid $head;
+            }
+        }
+        #lux {
+            border-radius: 0 0 0.9rem 0.9rem;
+            background-color: $lux;
+            
+            @include breakpoint-up (medium) {
+                border-radius: 0 0.9rem 0.9rem 0;
+            }
+        }
+        #v {
+            color: $lux;
+            
+            &:hover {
+                background: transparent;
+                color: $head;
+                border: 2px solid $head;
+            }
+        }
+    }
+}
